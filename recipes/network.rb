@@ -5,4 +5,6 @@
 
 include_recipe "libqt4::base"
 
-package "libqt4-network"
+potentially_at_compile_time do
+  package "libqt4-network"
+end
